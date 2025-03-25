@@ -93,10 +93,12 @@ function toggleFavorite(id, favorite) {
     .then(() => fetchRecipes())
     .catch((error) => console.error("Error updating favorite status:", error));
 }
+document.getElementById("search-bar").addEventListener("input", searchRecipes);
 
 // Search recipes
 function searchRecipes() {
   const query = document.getElementById("search-bar").value.toLowerCase();
+
 
   fetch(API_URL)
     .then((response) => response.json())
