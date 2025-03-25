@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: lightcoral;
+    background: olivedrab;
     margin: 0;
     padding: 20px;
     text-align: center;
@@ -28,7 +28,7 @@ h1 {
 }
 
 .recipe-card {
-    background-color: white;
+    background-color:goldenrod;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
