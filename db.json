@@ -12,7 +12,7 @@
       "title": "Chicken Curry",
       "ingredients": "Chicken, Curry Powder, Coconut Milk, Onions, Garlic, Ginger",
       "instructions": "1. Sauté onions, garlic, and ginger. 2. Add chicken and curry powder. 3. Pour coconut milk and simmer.",
-      "favorite": true
+      "favorite": false
     },
     {
       "id": "3",
