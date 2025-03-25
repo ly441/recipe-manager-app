@@ -1,119 +1,116 @@
-Recipe App
 
- Overview
+#Recipe App
 
-The Recipe App allows users to view, search, add, update, and delete recipes using a simple and interactive interface. It communicates with a db.json server to manage recipes dynamically.
+---
 
- Features
+##  Overview
+The Recipe App allows users to:
+- View, search, add, update, and delete recipes.
+- Communicate with a `db.json` server for dynamic recipe management.
 
-View a list of recipes fetched from the server
+---
 
-Search for recipes by name
+##  Features
+-  **View Recipes** - Fetches and displays recipes from the server.
+-  **Search Recipes** - Search for recipes by name.
+- **Add Recipes** - Create new recipes with title, ingredients, and instructions.
+-  **Edit Recipes** - Modify specific fields of a recipe.
+- **Delete Recipes** - Remove unwanted recipes from the database.
 
-Add new recipes with a title, ingredients, and instructions
+---
 
-Edit existing recipes using PATCH requests
+##  Technologies Used
+- **HTML** - Structures the webpage.
+- **CSS** - Styles the user interface.
+- **JavaScript (ES6)** - Manages dynamic updates and API communication.
+- **JSON Server** - Simulates a backend for data storage.
 
-Delete unwanted recipes from the database
+---
 
- Technologies Used
-
-HTML - Structure the webpage
-
-CSS - Styling for a visually appealing design
-
-JavaScript (ES6) - Handles dynamic updates and API communication
-
-JSON Server - Simulates a backend for data storage
-
-Project Structure
-
+##  Project Structure
+```
 /recipe-app  
  ├── index.html  # Main webpage
  ├── styles.css  # CSS styling
  ├── script.js   # JavaScript logic
  ├── db.json     # Fake API database
+```
 
- Setup Instructions
+---
 
-Clone the repository:
-
+## Setup Instructions
+### Clone the repository
+```sh
 git clone <your-repo-url>
+```
 
-Navigate to the project folder:
-
+###  Navigate to the project folder
+```sh
 cd recipe-app
+```
 
-Install JSON Server globally if you haven't already:
-
+###  Install JSON Server
+```sh
 npm install -g json-server
+```
 
-Start the JSON Server:
-
+###  Start the JSON Server
+```sh
 json-server --watch db.json --port 4000
+```
 
-Open index.html in a browser or use Live Server extension in VS Code.
+###  Run the project
+- Open `index.html` in a browser.
+- Or use the Live Server extension in VS Code.
 
- API Endpoints
+---
 
-Method
+## API Endpoints
+| Method  | Endpoint           | Description               |
+|---------|------------------|---------------------------|
+| **GET**    | `/recipes`       | Fetch all recipes        |
+| **POST**   | `/recipes`       | Add a new recipe         |
+| **PATCH**  | `/recipes/:id`   | Update a specific recipe |
+| **DELETE** | `/recipes/:id`   | Remove a recipe         |
 
-Endpoint
+---
 
-Description
-
-GET
-
-/recipes
-
-Fetch all recipes
-
-POST
-
-/recipes
-
-Add a new recipe
-
-PATCH
-
-/recipes/:id
-
-Update a specific recipe
-
-DELETE
-
-/recipes/:id
-
-Delete a recipe
-
- Example Recipe Object
-
+##  Example Recipe Object
+```json
 {
   "id": 1,
   "title": "Spaghetti Bolognese",
   "ingredients": "Pasta, Tomato Sauce, Meat",
   "instructions": "Cook pasta, add sauce, mix with meat."
 }
+```
 
-How to Use
+---
 
-View Recipes - Recipes will automatically load from the server.
+## How to Use
+### 🔹 Viewing Recipes
+- Recipes will automatically load from the server.
 
-Search Recipes - Use the search bar to filter recipes.
+### 🔹 Searching Recipes
+- Type a keyword in the search bar to filter recipes.
 
-Add a Recipe - Fill out the form and click submit to add a recipe.
+### 🔹 Adding a Recipe
+- Fill out the form and click **Submit** to add a new recipe.
 
-Edit a Recipe - Click the edit button to update a recipe.
+### 🔹 Editing a Recipe
+- Click the **Edit** button to update a recipe’s details.
 
-Delete a Recipe - Click the delete button to remove a recipe.
+### 🔹 Deleting a Recipe
+- Click the **Delete** button to remove a recipe from the server.
 
- Notes
+---
 
-Make sure json-server is running before interacting with the app.
+##  Notes
+✅ Ensure `json-server` is running before using the app.
+✅ This app is designed for **local use** but can be modified for real backend integration.
 
-The app is designed for local use but can be adapted for real backend integration.
+---
 
-Credits
-
-Developed by Lynn Kolii 
+##  Credits
+Developed by **Lynn Kolii** 
 
