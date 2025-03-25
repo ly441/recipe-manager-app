@@ -1,0 +1,19 @@
+strategies of creating my recipe manager
+
+header section 
+title of the app 
+recipe submision form 
+-should be  an input field for the title
+-texterea for incredients
+-texterea for instructions
+-submit button
+recipe list button
+-h2 for the recipe list
+-an ul to display fetched recipes dynamically 
+search bar
+-an input for searching recipes by title or ingredient
+javascript file inclusion
+-a script tag to include script.js at the of the body
+
+on my db.json should inlude the recipes so they can be easiuly fetched from my js
+add event listeners and dom manipulation 
