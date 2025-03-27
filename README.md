@@ -7,6 +7,7 @@
 The Recipe App allows users to:
 - View, search, add, update, and delete recipes.
 - Communicate with a `db.json` server for dynamic recipe management.
+- 
 
 ---
 
